@@ -1,0 +1,89 @@
+@import 'compass';
+@import 'partials/options';
+@import "compass/css3/box-shadow";
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	box-sizing: border-box;
+}
+body {
+	font-family: $font-family-serif;
+	font-size: $font-size;
+	color: $color-black;
+	line-height: 1.4em;
+	background-color: $color-bg;
+}
+
+h1 {
+	font-size: 1.7em;
+	line-height: 1.33em;
+	margin-top: 1.11em;
+	margin-bottom: 1.11em;
+}
+h2 {
+	font-size: 1.33em;
+	line-height: 1.5em;
+	margin-top: 1.11em;
+	margin-bottom: 1.11em;
+}
+h1, h2 {
+	text-align: center;
+	font-variant: small-caps;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.2em;
+	line-height: 1.15em;
+}
+img {
+	max-width: 100%;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+blockquote{} ;
+
+a {
+	color: $color-main;
+	transition: 0.5s;
+}
+a:hover, a:active {
+	color: $color-accent;
+}
+code {
+	font-family: $font-family-mono;
+	font-size: $font-size - 2;
+}
+hr {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border: none;
+	width: 70%;
+	border-top: 1px dotted #999;
+}
+p{
+	margin-top: 10px;
+}
+pre {
+	@include single-box-shadow(darken($color-bg, 05%), 0, 0, 0.5em, 0.25em, true);
+	padding: 0.5em;
+	overflow-x:auto;
+	overflow-y: visible;
+}
+ol, ul {
+	margin: 1em 0 1em 3em;
+	padding: 0;
+	li {
+		margin: 1em 0 1em 0;
+	}
+}
+ol {
+	list-style: decimal;
+	ol { 
+		list-style: lower-alpha;
+	}
+}

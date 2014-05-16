@@ -1,0 +1,15 @@
+body {
+	width: 663px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 663px) {
+	body {
+		width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+		
+		font-size: 1.1em;
+		line-height: 1.3em;
+		box-sizing: border-box;
+	}
+}
