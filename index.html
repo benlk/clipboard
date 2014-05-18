@@ -4,16 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	
-	<link rel="stylesheet" href="css/body.css">
 	<link rel="stylesheet" href="css/uberwriter.css">
 	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/body.css">
 	
 	<title>Clipboard CSS</title>
 </head>
 <body>
 	<h1>Clipboard CSS</h1>
-	<p>This is a utility stylesheet for throwing up fast one-page, mostly-text sites. It's not meant to be used for developing apps or providing structure or anything.</p>
+	<p>This is a utility stylesheet for throwing up fast, one-page, mostly-text sites. It's not meant to be used for developing apps or providing structure or anything.</p>
+	<p>Using it is as simple as downloading <a href="css/uberwriter.css"><code>uberwriter.css</code></a>, using it in your project and citing where you found it. <code>uberwriter.css</code> is licensed under the <a href="LICENSE">MIT License</a>, but the Buttons library included here is used under the <a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License v 2.0</a>.</p>
 	
 	<hr>
 	
@@ -36,6 +36,15 @@
 	
 	<h4>H4 is so '90s</h4>
 	<p>Integer consectetur facilisis molestie. Sed lorem arcu, molestie quis nulla ut, vehicula gravida turpis. Nam vitae neque porttitor, pulvinar nisl nec, condimentum diam. In rutrum dignissim nulla, nec auctor enim feugiat a.</p>
+	<p><i>Mostly</i> text. Clipboard CSS has rules for images, and can shove them left or right as you wish. The default is centered. On wider viewports, images will slide to the right and left. On viewports narrower than the standard body width of 660px, all images will be centered.</p>
+	<img src="http://placehold.it/700x300&text=700x300">
+	<p>Pellentesque luctus, libero at aliquet blandit, eros quam convallis sem, ullamcorper cursus justo massa vel augue. Etiam velit ligula, fringilla vel dolor ut, pharetra aliquet felis. Aliquam erat volutpat. Donec euismod egestas accumsan. Maecenas sit amet lacus elementum, suscipit nunc nec, iaculis lectus.</p>
+	<img src="http://placehold.it/200x300&text=centered+by+default">
+	<p>Aenean sollicitudin sagittis tellus, sit amet feugiat urna ultricies sit amet. Aenean risus justo, tristique non condimentum eget, cursus a mauris. Sed pulvinar volutpat tempor. Nulla vitae molestie arcu. Pellentesque pharetra, ligula quis commodo luctus, neque mauris blandit sapien, sed dignissim tortor augue id magna. Ut ac varius erat.</p>
+	<img src="http://placehold.it/200x300&text=.float-right" class="float-right">
+	<p>Praesent orci nisi, laoreet vitae tempor id, consectetur non mi. Donec eu hendrerit diam. Aliquam erat volutpat. Fusce auctor lobortis semper. Fusce ut dignissim nisi. Aenean sit amet augue nec justo fringilla laoreet nec vitae enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam eget condimentum nisi. Phasellus fermentum quam faucibus elementum facilisis. </p>
+	<img src="http://placehold.it/300x200&text=.float-left" class="float-left">
+	<p>Fusce in erat est. Sed in arcu iaculis erat tristique pulvinar vitae quis orci. Integer lobortis nulla id nulla dictum blandit. Ut lectus orci, dictum in porta ac, porta ut risus. Nunc placerat dapibus consequat. Nulla cursus in nulla quis congue. Phasellus vel ullamcorper metus. Sed laoreet ante in sapien accumsan aliquet. Donec egestas at ipsum at facilisis. Nullam non ipsum porta, convallis lorem vitae, tristique risus. Pellentesque fermentum vulputate felis id bibendum. Sed neque lectus, viverra at enim eget, congue tempus tortor. Etiam elit urna, consectetur a tortor in, sollicitudin rutrum dolor. Pellentesque ornare rhoncus vulputate. Vivamus eget lorem convallis, dignissim nisl et, rhoncus leo.</p>
 	<h5>Kids and their H5</h5>
 	<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce tempus feugiat dui, ut convallis dolor pulvinar id. Nam sapien risus, egestas at sem a, eleifend congue turpis. Donec mollis hendrerit enim. Sed sed porttitor urna. Quisque ac blandit elit. Cras gravida facilisis dapibus. Ut sed nunc metus. </p>
 	<ul>
@@ -47,10 +56,38 @@
 	<p>Cras at dolor libero. Pellentesque at dolor lacus. Nunc elementum sollicitudin bibendum.</p>
 	<h6>Does anyone actually use H6?</h6>
 	<p>I've never seen it used in the wild.</p>
-	<p>Donec ac laoreet leo. Aliquam nec elit purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris lectus urna, dictum sed sem at, ornare vulputate dolor. Sed consectetur eleifend est at interdum. Morbi congue dictum dui sed euismod. Proin elementum justo quis lectus malesuada, sit amet ullamcorper elit adipiscing. Sed dignissim fringilla suscipit. Integer congue, leo et dapibus lacinia, urna lacus viverra elit, non consequat arcu tellus in mauris. Donec ut erat laoreet, condimentum sem a, facilisis enim. Cras et tempor urna, vel lacinia arcu. Sed id felis fermentum, luctus felis volutpat, tincidunt lorem. Nam sed dolor pretium, pretium purus eu, aliquam nisl. Nulla pharetra venenatis tristique.</p>
+	<p>Donec ac laoreet leo. Aliquam nec elit purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris lectus urna, dictum sed sem at, ornare vulputate dolor. Sed consectetur eleifend est at interdum. Morbi congue dictum dui sed euismod. Proin elementum justo quis lectus malesuada, sit amet ullamcorper elit adipiscing. Sed dignissim fringilla suscipit.</p>
+	<ol>
+		<li>Here we have a list of Chinese restaurants:</li>
+		<li>Foo Chin Duck</li>
+		<li>Paradise Rainbow Confucius
+			<ol>
+				<li>Schezuan Seal with Cherry Coke Broth</li>
+				<li>Flash Baked Dromedary with Wilted Casserole
+					<ol>
+						<li>Camel</li>
+						<li>Spinach
+							<ol>
+								<li>Green bits</li>
+								<li>Bits that aren't green</li>
+							</ol>		
+						</li>
+					</ol>				
+				</li>
+				<li>Braised Yak with Prune Spinach</li>
+				<li>Tempura Coyote with Liquified Grits</li>
+				<li>Spit-Cooked Whale with Hazelnut Foam</li>
+			</ol>
+		</li>
+		<li>Beijing Lotus Dynasty</li>
+		<li>Panda Dragon Imperial</li>
+		<li>Chin Terrace Great</li>
+	</ol>
+	<p> Integer congue, leo et dapibus lacinia, urna lacus viverra elit, non consequat arcu tellus in mauris. Donec ut erat laoreet, condimentum sem a, facilisis enim. Cras et tempor urna, vel lacinia arcu. Sed id felis fermentum, luctus felis volutpat, tincidunt lorem. Nam sed dolor pretium, pretium purus eu, aliquam nisl. Nulla pharetra venenatis tristique.</p>
+	
 	
 	<h1 id="h1-buttons">And now for some buttons</h1>
-	<p>Brought to you from the <a href="https://alexwolfe.github.io/Buttons/">Buttons library</a> by <a href="https://twitter.com/alexwolfe">@alexwolfe</a> and <a href="https://twitter.com/roblevintennis">@roblevintennis</a>, originally under the Apache License v2.0</p>
+	<p>Brought to you from the <a href="https://alexwolfe.github.io/Buttons/">Buttons library</a> by <a href="https://twitter.com/alexwolfe">@alexwolfe</a> and <a href="https://twitter.com/roblevintennis">@roblevintennis</a>, originally under the <a href="https://www.apache.org/licenses/LICENSE-2.0.txt">Apache License v 2.0</a>.</p>
 	
 	<p class="center">
 	<a href="#h1-buttons" class="button button-3d">press me</a>
@@ -73,5 +110,9 @@
 	<a href="#h1-buttons" class="button button-border-highlight">press me</a>
 	<a href="#h1-buttons" class="button button-border-caution"> press me</a>
 	</p>
+	<footer>
+	<h1>How about some footer content?</h1>
+	<p>Clipboard CSS by <a href="https://twitter.com/benlkeith">@benlkeith</a></p>
+	</footer>
 </body>
 </html>

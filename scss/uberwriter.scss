@@ -1,3 +1,6 @@
+// Clipboard CSS copyright 2014 Ben Keith
+// Released under the MIT License
+
 @import 'compass';
 @import 'partials/options';
 @import "compass/css3/box-shadow";
@@ -9,13 +12,58 @@ html {
 	box-sizing: border-box;
 }
 body {
-	font-family: $font-family-serif;
+	font-family: $body-font;
 	font-size: $font-size;
 	color: $color-black;
 	line-height: 1.4em;
 	background-color: $color-bg;
+	padding-bottom: 3em;
 }
-
+a {
+	color: $color-main;
+	transition: 0.5s;
+	&:hover, &:active {
+		color: $color-accent;
+	}
+}
+blockquote{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-right: 0;
+	border-left: 1em solid lighten($color-black, 80%);
+	padding-left: 1em;
+	padding-right: 3em;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+code {
+	font-family: $font-family-mono;
+	letter-spacing: -0.05em;
+}
+footer {
+	color: lighten($color-black, 40%);
+	p {
+		text-align: center;
+		a {
+			color: inherit;
+			&:hover, &:active {
+				color: $color-main;
+			}
+		}
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $headline-font;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	a {
+		color: inherit;
+	}
+}
 h1 {
 	font-size: 1.7em;
 	line-height: 1.33em;
@@ -32,31 +80,20 @@ h1, h2 {
 	text-align: center;
 	font-variant: small-caps;
 	font-weight: normal;
+	letter-spacing: normal;
 }
 h3 {
 	font-size: 1.2em;
 	line-height: 1.15em;
 }
-img {
-	max-width: 100%;
+h4,h5{
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
 }
-.center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-blockquote{} ;
-
-a {
-	color: $color-main;
-	transition: 0.5s;
-}
-a:hover, a:active {
-	color: $color-accent;
-}
-code {
-	font-family: $font-family-mono;
-	font-size: $font-size - 2;
+h6 {
+	font-size: 1.1em;
+	letter-spacing: 0.1em;
 }
 hr {
 	margin-top: 3em;
@@ -65,25 +102,63 @@ hr {
 	width: 70%;
 	border-top: 1px dotted #999;
 }
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	max-width: 100%;
+	&.float-right {
+		float: right;
+		display: inline;
+		margin-left: 1em;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 1em;
+		max-width: 30%;
+	}
+	&.float-left {
+		float: left;
+		display: inline;
+		margin-left: 0;
+		margin-right: 1em;
+		margin-top: 0;
+		margin-bottom: 1em;
+		max-width: 30%;
+	}
+}
 p{
 	margin-top: 10px;
 }
 pre {
-	@include single-box-shadow(darken($color-bg, 05%), 0, 0, 0.5em, 0.25em, true);
+	@include single-box-shadow(darken($color-bg, 10%), 0, 0, 0.5em, 0.25em, true);
 	padding: 0.5em;
 	overflow-x:auto;
 	overflow-y: visible;
+	font-size: $font-size - 2;
 }
 ol, ul {
 	margin: 1em 0 1em 3em;
 	padding: 0;
 	li {
-		margin: 1em 0 1em 0;
+		margin: 0.5em 0 0.5em 0;
 	}
+}
+ol ul, ul ol, ol ol, ul ul {
+	margin: 0.5em 0 0.5em 2em;
 }
 ol {
 	list-style: decimal;
 	ol { 
 		list-style: lower-alpha;
+		ol {
+			list-style: lower-roman;
+			ol {
+				list-style: lower-greek;
+			}
+		}
 	}
 }
+
+@import 'partials/responsive';
