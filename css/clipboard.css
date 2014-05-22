@@ -353,9 +353,15 @@ body {
     margin-bottom: 1em;
     max-width: 100%;
   }
+
+  /* line 50, ../scss/partials/_responsive.scss */
+  nav ul.nav li.back {
+    position: relative;
+    margin-left: 1em;
+  }
 }
 @media screen and (max-width: 300px) {
-  /* line 52, ../scss/partials/_responsive.scss */
+  /* line 56, ../scss/partials/_responsive.scss */
   ol.inline li, ul.inline li {
     display: block;
   }
