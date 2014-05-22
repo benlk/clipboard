@@ -201,16 +201,29 @@ nav ul.nav {
 	}
 }
 
-// Sticky footer stuff:
+/* Sticky footer stuff, based on
+ * http://blog.softlayer.com/2012/tips-and-tricks-pure-css-sticky-footers
+ */
 
-html, body {
-	min-height: 100%;
+html {
+	height: 100%;
 	position: relative;
+	padding-bottom: 0;
+}
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+	*:first-child {
+		margin-top: 0;	
+	}
 }
 footer {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
+	height: 100px;
 }
 
 @import 'partials/responsive';

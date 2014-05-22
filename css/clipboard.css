@@ -260,17 +260,34 @@ nav ul.nav li a {
   text-decoration: none;
 }
 
-/* line 206, ../scss/clipboard.scss */
-html, body {
-  min-height: 100%;
+/* Sticky footer stuff, based on
+ * http://blog.softlayer.com/2012/tips-and-tricks-pure-css-sticky-footers
+ */
+/* line 208, ../scss/clipboard.scss */
+html {
+  height: 100%;
   position: relative;
+  padding-bottom: 0;
 }
 
-/* line 210, ../scss/clipboard.scss */
+/* line 213, ../scss/clipboard.scss */
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+/* line 218, ../scss/clipboard.scss */
+body *:first-child {
+  margin-top: 0;
+}
+
+/* line 222, ../scss/clipboard.scss */
 footer {
   position: absolute;
   width: 100%;
   bottom: 0;
+  height: 100px;
 }
 
 /* line 1, ../scss/partials/_responsive.scss */
