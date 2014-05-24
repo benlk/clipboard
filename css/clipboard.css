@@ -278,7 +278,7 @@ body {
   box-sizing: border-box;
 }
 /* line 218, ../scss/clipboard.scss */
-body *:first-child {
+body h1:first-child {
   margin-top: 0;
 }
 
