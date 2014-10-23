@@ -277,8 +277,9 @@ body {
   padding-bottom: 100px;
   box-sizing: border-box;
 }
-/* line 218, ../scss/clipboard.scss */
-body h1:first-child {
+
+/* line 219, ../scss/clipboard.scss */
+body > *::first-child {
   margin-top: 0;
 }
 
